@@ -1,6 +1,3 @@
-server:
-  port: 8080
-
 spring:
   application:
     name: TEST_DEPLOYMENT
@@ -12,5 +9,3 @@ spring:
 
   jpa:
     show-sql: true
-sonar:
-  login: 5e370d8a950718a116fc9d9c1a930964dcb7fe6e
