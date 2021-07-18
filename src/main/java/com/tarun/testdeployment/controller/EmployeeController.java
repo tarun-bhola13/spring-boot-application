@@ -20,6 +20,11 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
+    @GetMapping("/home/{name}")
+    public String home(@PathVariable("name") String name){
+        return "Hello "+name;
+    }
+
 
     @PostMapping("/employee")
     public String save(@RequestBody EmployeeDTO employee) throws RequestException {
